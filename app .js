@@ -2,9 +2,18 @@
             const canvas = document.getElementById("viewport");
             const nameField = document.querySelector("#nameField");
             const submitBtn = document.querySelector("#my-btn");
+            // let myFont = new FontFace(
+            //     "Tajawal",
+            //     "url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap')"
+            //   );
+            // myFont.load().then(function(font){
+            //     document.fonts.add(font);
+            //     console.log('Font loaded');
+            // });
+
 
             image = new Image();
-            image.src = 'kuksal.png';
+            image.src = '3.png';
 
             image.onload = function(e){
                 updateCanvas(canvas, image, nameField.value);
@@ -12,6 +21,7 @@
 
             submitBtn.onclick = function(e){
                     updateCanvas(canvas, image, nameField.value);
+                    downloadEidCard();
                 }
        
 
@@ -25,8 +35,8 @@
             const ctx = canvas.getContext("2d");
             const width = image.width;
             const height = image.height;
-            const fontSize = Math.floor(width/10);
-            const yOffset = height/25;
+            const fontSize = Math.floor(width/18);
+            const yOffset = height/6;
 
             //Set canvas dimensions
             canvas.width = width;
@@ -41,12 +51,20 @@
             ctx.fillStyle = "white";
             ctx.textAlign = "center";
             ctx.lineJoin = "round";
-            ctx.font = `${fontSize}px sans-serif`;
+            ctx.font = `${fontSize}px Tajawal`;
 
             // Add top text
             ctx.textBaseline = "bottom";
-            ctx.strokeText(text, width / 2, height - yOffset);
+            // ctx.strokeText(text, width / 2, height - yOffset);
             ctx.fillText(text, width / 2, height - yOffset);
-
-
         }
+        
+
+        function downloadEidCard(){
+            let link = document.createElement('a');
+            document.body.append(link);
+            link.download = `بطاقة معايدة ${nameField.value}.png`;
+            link.href = document.getElementById('viewport').toDataURL()
+            link.click();
+          }
+          
