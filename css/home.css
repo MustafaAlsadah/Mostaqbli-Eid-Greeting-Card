@@ -145,7 +145,7 @@
 }
 
 input#nameField {
-  z-index: 33;
+    z-index: 33;
 }
 
 .home .image-1-xl4bh6 {
@@ -216,11 +216,12 @@ input#nameField {
 
 canvas#viewport {
   position: relative;
-  left: 12%;
+  left: -3%;
   /* width: 70%; */
   z-index: 2;
   /* height: 52%; */
-  top: 15%;
+  top: 3%;
+  transform: scale(0.72);
 }
 
 input[type=radio] {
