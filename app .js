@@ -1,7 +1,7 @@
-            const whiteAndGoldCard = document.getElementById("W&G-option");
-            const whiteAndGreenCard = document.getElementById("W&Green-option");
-            const whiteAndPurpleCard = document.getElementById("W&P-option");
-            
+            const whiteAndGoldCard = document.getElementById("white-and-gold");
+            const whiteAndGreenCard = document.getElementById("white-and-green");
+            const whiteAndPurpleCard = document.getElementById("white-and-purple");
+            const whiteAndLittlePurpleCard = document.getElementById("white-and-little-purple");
 
             const canvas = document.getElementById("viewport");
             const nameField = document.querySelector("#nameField");
@@ -9,7 +9,7 @@
 
 
             defaultImg = new Image();
-            defaultImg.src = 'img/artboard-1-2@1x.png';
+            defaultImg.src = 'img/Artboard 1.png';
 
             let selectedImg = defaultImg;
 
@@ -21,6 +21,9 @@
 
             whiteAndGold = new Image();
             whiteAndGold.src = 'img/Artboard 4.png';
+
+            whiteAndLittlePurple = new Image();
+            whiteAndLittlePurple.src = 'img/Artboard 1.png';
 
             whiteAndGoldCard.onclick = function(e){
                 selectedImg = whiteAndGold;
@@ -35,6 +38,11 @@
             whiteAndPurpleCard.onclick = function(e){
                 selectedImg = whiteAndPurple;
                 updateCanvas(canvas, whiteAndPurple, nameField.value);
+            }
+
+            whiteAndLittlePurpleCard.onclick = function(e){
+                selectedImg = whiteAndLittlePurple;
+                updateCanvas(canvas, whiteAndLittlePurple, nameField.value);
             }
 
             defaultImg.onload = function(e){
@@ -59,8 +67,8 @@
             const yOffset = height/3;
 
             //Set canvas dimensions
-            canvas.width = width*2;
-            canvas.height = height*2;
+            canvas.width = width*1;
+            canvas.height = height*1;
 
             //place the image
             ctx.drawImage(image, 0, 0);
