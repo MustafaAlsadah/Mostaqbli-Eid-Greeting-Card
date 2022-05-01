@@ -88,8 +88,11 @@
   pointer-events: auto;
   position: absolute;
   top: 1407px;
+  display: flex;
   transition: all 0.2s ease;
   width: 300px;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .rectangle-6-ZYKtKp:hover {
@@ -104,14 +107,15 @@
   font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 900;
-  height: 58px;
-  left: 266px;
+  /* height: 58px; */
+  /* left: 266px; */
   letter-spacing: -3.36px;
   line-height: normal;
   mix-blend-mode: normal;
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
-  top: 1437px;
+  top: 1453px;
+  z-index: 33;
   width: auto;
 }
 
