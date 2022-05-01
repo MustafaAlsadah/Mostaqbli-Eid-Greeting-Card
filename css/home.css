@@ -37,8 +37,11 @@
   height: 1601px;
   left: 59px;
   position: absolute;
+  display: flex;
   top: 229px;
   width: 1018px;
+  align-items: center;
+  justify-content: center;
 }
 
 .home .rectangle-8-PVqWxe {
@@ -156,22 +159,22 @@ input#nameField {
 .home .image-1-xl4bh6 {
   background-color: transparent;
   height: 659px;
-  left: -115px;
+  left: -163px;
   mix-blend-mode: normal;
   object-fit: cover;
   position: absolute;
-  top: 1103px;
+  top: 1118px;
   width: 427px;
 }
 
 .home .image-2-xl4bh6 {
   background-color: transparent;
   height: 722px;
-  left: 751px;
+  left: 795px;
   mix-blend-mode: normal;
   object-fit: cover;
   position: absolute;
-  top: -12px;
+  top: -82px;
   width: 525px;
 }
 
@@ -221,12 +224,12 @@ input#nameField {
 
 canvas#viewport {
   position: relative;
-  left: -3%;
+  left: 0%;
   /* width: 70%; */
   z-index: 2;
   /* height: 52%; */
-  top: 3%;
-  transform: scale(0.72);
+  top: -7%;
+  transform: scale(0.66);
 }
 
 input[type=radio] {
