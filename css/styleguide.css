@@ -1,0 +1,11 @@
+:root { 
+  --black: #000000;
+  --white: #ffffff;
+ 
+  --font-size-l: 36px;
+  --font-size-m: 30px;
+  --font-size-xl: 48px;
+  --font-size-xxl: 64px;
+ 
+  --font-family-tajawal: "Tajawal", Helvetica;
+}
