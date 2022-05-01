@@ -59,8 +59,8 @@
             const yOffset = height/3;
 
             //Set canvas dimensions
-            canvas.width = width;
-            canvas.height = height;
+            canvas.width = width*2;
+            canvas.height = height*2;
 
             //place the image
             ctx.drawImage(image, 0, 0);
