@@ -83,7 +83,10 @@
                 fillStyleColor = '#ffb700';
             }else if(selectedImg===whiteAndGreen){
                 fillStyleColor = 'white';
-            }else{
+            }else if(selectedImg===whiteAndLittlePurpleCard){
+                fillStyleColor = '#712177';
+            }
+            else{
                 fillStyleColor = 'white';
             }
             ctx.fillStyle = fillStyleColor;
